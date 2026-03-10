@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tyúkbérlés — Remény Farm | Bérelj tyúkot, kapj friss tojást hetente</title>
+  <meta name="description" content="Bérelj tyúkot a Remény Farmon! Havi 4 990 Ft-ért saját, nevesített tyúkod lesz, és hetente friss tojást kapsz Budapestre szállítva. Csatlakozz a várólistához!">
+  <link rel="canonical" href="https://tyuk.remenyfarm.hu/">
+  <meta property="og:title" content="Tyúkbérlés — Remény Farm">
+  <meta property="og:description" content="Bérelj tyúkot a farmon, kapj friss tojást hetente. 4 990 Ft/hó. Csatlakozz a várólistához!">
+  <meta property="og:image" content="https://tyuk.remenyfarm.hu/images/og-image.jpg">
+  <meta property="og:url" content="https://tyuk.remenyfarm.hu/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Remény Farm — Tyúkbérlés">
+  <meta property="og:locale" content="hu_HU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tyúkbérlés — Remény Farm">
+  <meta name="twitter:description" content="Bérelj tyúkot a farmon, kapj friss tojást hetente Budapestre.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Remény Farm Kft.">
+  <meta name="keywords" content="tyúkbérlés, tojás előfizetés, friss tojás Budapest, szabadtartású tojás, regeneratív farm, Remény Farm, tojásközösség, tyúk mecénás">
+  <meta name="theme-color" content="#004D40">
+  <link rel="alternate" hreflang="hu" href="https://tyuk.remenyfarm.hu/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Tyúkbérlés — Remény Farm",
+    "description": "Bérelj tyúkot a Remény Farmon. Saját, nevesített tojótyúkod gondozását mi végezzük, te pedig hetente friss tojást kapsz Budapestre szállítva.",
+    "brand": { "@type": "Brand", "name": "Remény Farm" },
+    "offers": {
+      "@type": "Offer",
+      "price": "4990",
+      "priceCurrency": "HUF",
+      "availability": "https://schema.org/PreOrder",
+      "url": "https://tyuk.remenyfarm.hu/"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VBCSBQPNL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5VBCSBQPNL');
+  </script>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --cream: #fcf3de;
+      --cream-light: #fdf7e7;
+      --green-dark: #004d40;
+      --green-mid: #3b6d63;
+      --green-light: #678e86;
+      --green-pale: #e7edec;
+      --red: #d94b58;
+      --red-hover: #e16973;
+      --red-pale: #f9dcde;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', -apple-system, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--green-dark);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- UTILITY ---- */
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    .text-center { text-align: center; }
+
+    /* ---- NAV ---- */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(252, 243, 222, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,77,64,0.08);
+      transition: all 0.3s ease;
+    }
+
+    nav.scrolled { box-shadow: 0 2px 20px rgba(0,77,64,0.06); }
+
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo img { height: 40px; width: auto; }
+    .nav-logo span {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--green-dark);
+    }
+
+    .nav-cta {
+      display: inline-block;
+      padding: 8px 20px;
+      background: var(--red);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .nav-cta:hover { background: var(--red-hover); transform: translateY(-1px); }
+
+    /* ---- HERO ---- */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--green-dark) 0%, #00695c 50%, #2e7d32 100%);
+      padding: 120px 24px 80px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+    }
+
+    .hero-emoji {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease 0.2s forwards;
+    }
+
+    .hero-title {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: clamp(32px, 5.5vw, 56px);
+      line-height: 1.2;
+      color: #fff;
+      margin-bottom: 16px;
+      opacity: 0;
+      transform: translateY(25px);
+      animation: fadeUp 0.8s ease 0.4s forwards;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--cream);
+    }
+
+    .hero-sub {
+      font-size: clamp(15px, 2vw, 18px);
+      color: rgba(252, 243, 222, 0.85);
+      line-height: 1.7;
+      max-width: 540px;
+      margin: 0 auto 32px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease 0.6s forwards;
+    }
+
+    .hero-price {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 16px;
+      padding: 16px 32px;
+      margin-bottom: 32px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease 0.8s forwards;
+    }
+
+    .hero-price .amount {
+      font-family: var(--serif);
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .hero-price .period {
+      font-size: 0.9rem;
+      color: rgba(252,243,222,0.7);
+      display: block;
+      margin-top: 2px;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      padding: 16px 40px;
+      background: var(--red);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.8s ease 1s forwards;
+    }
+    .hero-cta:hover { background: var(--red-hover); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(217,75,88,0.3); }
+
+    .hero-note {
+      display: block;
+      margin-top: 12px;
+      font-size: 0.78rem;
+      color: rgba(252,243,222,0.5);
+      opacity: 0;
+      animation: fadeUp 0.8s ease 1.1s forwards;
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ---- SECTION BASE ---- */
+    section { padding: 80px 0; }
+    section:nth-child(even) { background: var(--cream-light); }
+
+    .section-label {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 0.72rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--green-light);
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: clamp(24px, 3.5vw, 36px);
+      line-height: 1.25;
+      color: var(--green-dark);
+      margin-bottom: 16px;
+    }
+
+    .section-text {
+      font-size: 0.92rem;
+      color: var(--green-mid);
+      line-height: 1.75;
+      max-width: 640px;
+    }
+
+    .text-center .section-text { margin: 0 auto; }
+
+    /* ---- HOW IT WORKS ---- */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .step {
+      text-align: center;
+      padding: 32px 20px;
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid rgba(0,77,64,0.06);
+      transition: all 0.3s ease;
+    }
+
+    .step:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,77,64,0.06); }
+
+    .step-icon {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+    }
+
+    .step-title {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--green-dark);
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 0.82rem;
+      color: var(--green-mid);
+      line-height: 1.6;
+    }
+
+    /* ---- COMPARISON ---- */
+    .comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 600px) { .comparison { grid-template-columns: 1fr; } }
+
+    .compare-card {
+      padding: 28px 24px;
+      border-radius: 16px;
+      border: 1px solid rgba(0,77,64,0.08);
+    }
+
+    .compare-card.them {
+      background: #fff;
+    }
+
+    .compare-card.us {
+      background: var(--green-dark);
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .compare-card .compare-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      opacity: 0.6;
+    }
+
+    .compare-card.us .compare-label { color: var(--cream); opacity: 0.7; }
+
+    .compare-card .compare-price {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .compare-card .compare-note {
+      font-size: 0.78rem;
+      opacity: 0.6;
+      margin-bottom: 16px;
+    }
+
+    .compare-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .compare-card ul li {
+      font-size: 0.82rem;
+      padding: 4px 0;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .compare-card ul li::before {
+      flex-shrink: 0;
+      font-size: 0.9rem;
+    }
+
+    .compare-card.them ul li::before { content: '❌'; }
+    .compare-card.us ul li::before { content: '✅'; }
+
+    /* ---- FEATURES ---- */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 16px;
+      padding: 24px;
+      background: #fff;
+      border-radius: 14px;
+      border: 1px solid rgba(0,77,64,0.06);
+      transition: all 0.2s ease;
+    }
+
+    .feature:hover { box-shadow: 0 4px 20px rgba(0,77,64,0.05); }
+
+    .feature-icon { font-size: 1.6rem; flex-shrink: 0; padding-top: 2px; }
+
+    .feature-title {
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--green-dark);
+      margin-bottom: 4px;
+    }
+
+    .feature-desc {
+      font-size: 0.8rem;
+      color: var(--green-mid);
+      line-height: 1.55;
+    }
+
+    /* ---- DONATE SECTION ---- */
+    .donate-box {
+      max-width: 640px;
+      margin: 40px auto 0;
+      padding: 40px 32px;
+      background: var(--green-dark);
+      border-radius: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .donate-box .donate-icon { font-size: 2.4rem; margin-bottom: 12px; }
+
+    .donate-box h3 {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .donate-box p {
+      font-size: 0.85rem;
+      color: rgba(252,243,222,0.8);
+      line-height: 1.7;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .donate-box a {
+      color: var(--cream);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ---- FAQ ---- */
+    .faq-list {
+      max-width: 640px;
+      margin: 40px auto 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(0,77,64,0.1);
+    }
+
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 0;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--green-dark);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .faq-q::after {
+      content: '+';
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--green-light);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .faq-q::after { content: '−'; }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 300px;
+      padding-bottom: 20px;
+    }
+
+    .faq-a p {
+      font-size: 0.84rem;
+      color: var(--green-mid);
+      line-height: 1.7;
+    }
+
+    /* ---- CTA FINAL ---- */
+    .cta-section {
+      background: var(--green-dark) !important;
+      color: #fff;
+      text-align: center;
+      padding: 80px 24px;
+    }
+
+    .cta-section .section-label { color: rgba(252,243,222,0.5); }
+    .cta-section .section-title { color: #fff; }
+    .cta-section .section-text { color: rgba(252,243,222,0.75); }
+
+    /* ---- FORM ---- */
+    .signup-form {
+      max-width: 420px;
+      margin: 32px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .signup-form input,
+    .signup-form select {
+      width: 100%;
+      padding: 14px 18px;
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      border: 1px solid rgba(0,77,64,0.15);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--green-dark);
+      transition: border-color 0.2s;
+      outline: none;
+    }
+
+    .signup-form input:focus,
+    .signup-form select:focus {
+      border-color: var(--green-dark);
+    }
+
+    .signup-form input::placeholder { color: var(--green-light); }
+
+    .cta-section .signup-form input,
+    .cta-section .signup-form select {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.2);
+      color: #fff;
+    }
+
+    .cta-section .signup-form input::placeholder { color: rgba(255,255,255,0.4); }
+    .cta-section .signup-form select { color: rgba(255,255,255,0.7); }
+    .cta-section .signup-form option { color: var(--green-dark); background: #fff; }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 14px 32px;
+      background: var(--red);
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-align: center;
+    }
+
+    .btn-primary:hover { background: var(--red-hover); transform: translateY(-1px); }
+
+    .form-note {
+      font-size: 0.72rem;
+      color: rgba(252,243,222,0.4);
+      margin-top: 4px;
+    }
+
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .form-success.show { display: block; }
+    .form-success .check { font-size: 3rem; margin-bottom: 8px; }
+    .form-success p { font-size: 0.9rem; color: rgba(252,243,222,0.85); }
+
+    /* ---- FOOTER ---- */
+    footer {
+      padding: 40px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(0,77,64,0.08);
+    }
+
+    footer img { height: 48px; margin-bottom: 12px; }
+
+    footer p {
+      font-size: 0.75rem;
+      color: var(--green-light);
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: var(--green-mid);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ---- ANIMATIONS ---- */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: all 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 600px) {
+      section { padding: 56px 0; }
+      .steps { gap: 16px; }
+      .step { padding: 24px 16px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .donate-box { padding: 32px 20px; }
+      nav { padding: 12px 16px; }
+      .nav-logo span { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="/" class="nav-logo">
+      <img src="images/logo-quarter.png" alt="Remény Farm logó" width="40" height="40">
+      <span>Remény Farm</span>
+    </a>
+    <a href="#varolista" class="nav-cta">Csatlakozom 🐔</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-emoji">🐔</div>
+      <h1 class="hero-title">Bérelj tyúkot.<br><em>Kapj friss tojást.</em></h1>
+      <p class="hero-sub">Saját, nevesített tyúkod a Remény Farmon — mi gondoskodunk róla,<br>te pedig hetente friss tojást kapsz Budapestre. Kövesd az appból, nézd élőben.</p>
+      <div class="hero-price">
+        <span class="amount">4 990 Ft<span style="font-size:0.5em;font-weight:400;opacity:0.7"> /hó</span></span>
+        <span class="period">Minden költséget tartalmaz.</span>
+      </div>
+      <div>
+        <a href="#varolista" class="hero-cta">Feliratkozom a várólistára</a>
+        <span class="hero-note">Hamarosan indul — csatlakozz az elsők között!</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <div class="container text-center reveal">
+      <span class="section-label">Hogyan működik</span>
+      <h2 class="section-title">Négy lépés a friss tojásig</h2>
+      <p class="section-text">Nem kell hozzá sem kert, sem udvar — csak pár kattintás.</p>
+    </div>
+    <div class="container">
+      <div class="steps reveal">
+        <div class="step">
+          <div class="step-icon">📝</div>
+          <h3 class="step-title">Feliratkozol</h3>
+          <p class="step-desc">Csatlakozol a várólistához, és hamarosan értesítünk az indulásról.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">🐣</div>
+          <h3 class="step-title">Kiválasztod a tyúkod</h3>
+          <p class="step-desc">Nevet adsz neki — igen, tényleg. Az a te tyúkod lesz a farmon.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">🥚</div>
+          <h3 class="step-title">Hetente tojást kapsz</h3>
+          <p class="step-desc">Budapesti átvevőponton, hetente friss tojás — közvetlenül a farmról.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">🌿</div>
+          <h3 class="step-title">Követed az appból</h3>
+          <p class="step-desc">iPhone appból statisztikák, fotók, és YouTube live stream a csoportodról. Bármikor kilátogathatsz!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section>
+    <div class="container text-center reveal">
+      <span class="section-label">Miért más ez</span>
+      <h2 class="section-title">Bolti tojás vs. Remény Farm</h2>
+      <p class="section-text">A tyúk nem gép. De pont ez teszi különlegessé, amit kapsz.</p>
+    </div>
+    <div class="container">
+      <div class="comparison reveal">
+        <div class="compare-card them">
+          <div class="compare-label">Bolti tojás</div>
+          <div class="compare-price">74–110 Ft</div>
+          <div class="compare-note">1 db bio tojás, szupermarketben</div>
+          <ul>
+            <li>Fogalmad sincs, honnan jön</li>
+            <li>Műanyag tálcás csomagolás</li>
+            <li>Ipari tartás, "szabadtartás" papíron</li>
+            <li>Semmilyen kapcsolat a forrással</li>
+          </ul>
+        </div>
+        <div class="compare-card us">
+          <div class="compare-label">Remény Farm</div>
+          <div class="compare-price" style="color:var(--cream)">~60–75 Ft</div>
+          <div class="compare-note">1 db tojás a havidíjból számolva</div>
+          <ul>
+            <li>Tudod a tyúkod nevét</li>
+            <li>Valódi szabadtartás, legelőn</li>
+            <li>Bármikor kilátogathatsz</li>
+            <li>Videóban követheted a farmot</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section>
+    <div class="container text-center reveal">
+      <span class="section-label">Amit kapsz</span>
+      <h2 class="section-title">Nem csak tojás — kapcsolat</h2>
+    </div>
+    <div class="container">
+      <div class="features-grid reveal">
+        <div class="feature">
+          <span class="feature-icon">🏷️</span>
+          <div>
+            <h3 class="feature-title">Névre szóló tyúk</h3>
+            <p class="feature-desc">A te tyúkod, a te neveddel. Ajándékba is adható — egyedi és személyes.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🥚</span>
+          <div>
+            <h3 class="feature-title">Heti ~5-7 tojás</h3>
+            <p class="feature-desc">Tojó hibridek, ~95%-os tojási aránnyal. A pontos szám természetfüggő — és pont ez a szép benne.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🚗</span>
+          <div>
+            <h3 class="feature-title">Budapest kiszállítás</h3>
+            <p class="feature-desc">Hetente, egy központi átvevőponton. Kényelmesen, a te időbeosztásodhoz igazítva.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">📱</span>
+          <div>
+            <h3 class="feature-title">iPhone alkalmazás</h3>
+            <p class="feature-desc">Kövesd a csoportod statisztikáit, tojáshozamot, fotókat — és nevezd el a tyúkodat, mindet az appból.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">📸</span>
+          <div>
+            <h3 class="feature-title">Fotók és live stream</h3>
+            <p class="feature-desc">Rendszeres fotók a tyúkodról és a csoportról. A YouTube-on élőben követheted, ahogy alakul a tojócsoport.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🌳</span>
+          <div>
+            <h3 class="feature-title">Silvopasture projekt</h3>
+            <p class="feature-desc">A tyúkod egy komplex fás legelő része — fák, cserjék, szarvasmarha és juhok között él.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🏡</span>
+          <div>
+            <h3 class="feature-title">Nyitott kapu</h3>
+            <p class="feature-desc">A Liget szabadon látogatható — a járványügyi szabályok betartása mellett saját szemeddel ellenőrizheted, hogyan élnek a tyúkjaid.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATE -->
+  <section>
+    <div class="container text-center reveal">
+      <span class="section-label">Ha nem kéred a tojást</span>
+      <h2 class="section-title">Adományozd egy rászoruló gyereknek</h2>
+      <p class="section-text">Szeretnél támogatni a projektet, de nem kérsz tojást? Van erre is megoldás.</p>
+      <div class="donate-box">
+        <div class="donate-icon">💛</div>
+        <h3>Gyermekétkeztetési Alapítvány</h3>
+        <p>Ha nem kéred a tojáshozamot, a te tyúkod tojása a <a href="https://gyea.hu" target="_blank" rel="noopener">Gyermekétkeztetési Alapítványhoz</a> kerül — rászoruló gyerekek reggelijéhez. Ugyanaz a tyúk, ugyanaz a minőség — csak más asztalra kerül.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container text-center reveal">
+      <span class="section-label">Kérdések</span>
+      <h2 class="section-title">Gyakran ismételt kérdések</h2>
+    </div>
+    <div class="container">
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q">Mennyibe kerül egy tojás?</button>
+          <div class="faq-a"><p>A havidíj (4 990 Ft) minden költséget tartalmaz — nem kell a tojásért külön fizetni. Ha elosztod a várható tojásokkal, egy tojás ára kb. 60–75 Ft, ami olcsóbb, mint a bolti bio tojás (74–110 Ft).</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Pontosan hány tojást kapok?</button>
+          <div class="faq-a"><p>Egy tyúk tojáshozama heti 5–7 darab (~20–28/hó). Tojó hibrideket tartunk, ~95%-os tojási aránnyal. Pontos darabszámot nem tudunk garantálni, mert a tyúk nem gép — az időjárás, hőmérséklet és évszak mind befolyásolja. De pont ezáltal kerülsz közelebb a természethez.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Hol és mikor vehetem át a tojásokat?</button>
+          <div class="faq-a"><p>Hetente egyszer, egy budapesti átvevőponton. A pontos helyszínt és időpontot az indulás előtt közöljük — a várólistán elsőként értesülsz!</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Mi történik, ha a tyúkom elpusztul?</button>
+          <div class="faq-a"><p>Egy minimális, természetes elhullást belekalkuláltunk — kicsivel több tyúkot tartunk, mint amennyit meghirdetünk. Normális esetben ez nem érint téged. Rendkívüli esetben (járvány, baleset) új feltételekkel folytatjuk a programot.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">A tojások bio minősítésűek?</button>
+          <div class="faq-a"><p>A bio minősítésnél jóval magasabbra tettük a lécet. Egy külső ellenőrzőszervezet helyett te magad is ellenőrizheted — a Liget nyílt látogatási pont, bármikor kijöhetsz és saját szemeddel láthatod. Mi, a családunk, barátaink, rokonaink ugyanezt a tojást esszük. 🙂</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Ki lehet látogatni a tyúkomat?</button>
+          <div class="faq-a"><p>Igen! A Liget egy nyílt látogatási pont — bármikor kijöhetsz. A járványügyi szabályok betartása mellett rálátsz a tyúkokra, és saját szemeddel ellenőrizheted, hogyan élnek. Előre szólj, és személyesen is megmutatjuk!</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Ajándékba adható?</button>
+          <div class="faq-a"><p>Igen — névre szóló, személyes ajándék: "Béreltem neked egy tyúkot a Remény Farmon." Különlegesebb, mint egy bármilyen tárgy.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-section" id="varolista">
+    <div class="container reveal">
+      <span class="section-label">Várólista</span>
+      <h2 class="section-title">Csatlakozz az elsők között</h2>
+      <p class="section-text">A program hamarosan indul. Iratkozz fel, és elsőként értesítünk, amikor lefoglalhatod a tyúkodat.</p>
+
+      <form class="signup-form" id="signupForm">
+        <input type="text" name="name" placeholder="Neved" required autocomplete="name">
+        <input type="email" name="email" placeholder="Email címed" required autocomplete="email">
+        <select name="interest" required>
+          <option value="" disabled selected>Mi érdekel?</option>
+          <option value="tojas">Tyúkbérlés + tojás</option>
+          <option value="adomany">Tyúkbérlés + adomány (Gyermekétkeztetés)</option>
+          <option value="ajandek">Ajándékba adnám</option>
+          <option value="kivancsi">Csak kíváncsi vagyok</option>
+        </select>
+        <button type="submit" class="btn-primary">Feliratkozom a várólistára 🐔</button>
+        <span class="form-note">Nem spammelünk. Csak akkor írunk, ha van miről.</span>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <div class="check">🎉</div>
+        <p><strong>Köszi, rajta vagy a listán!</strong><br>Értesítünk, amint indul a program.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="images/logo-quarter.png" alt="Remény Farm logó" width="48" height="48">
+    <p>
+      Remény Farm Kft. · 3343 Bekölce, Szabadság utca 50.<br>
+      <a href="https://www.remenyfarm.hu" target="_blank" rel="noopener">remenyfarm.hu</a> ·
+      <a href="https://liget.remenyfarm.hu" target="_blank" rel="noopener">Liget projekt</a><br>
+      Tiszta élelmiszerek, tiszta lelkiismerettel. 🌿
+    </p>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => observer.observe(el));
+
+    // FAQ toggle
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const wasOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+        if (!wasOpen) item.classList.add('open');
+      });
+    });
+
+    // Form submission
+    const form = document.getElementById('signupForm');
+    const success = document.getElementById('formSuccess');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button');
+      btn.textContent = 'Küldés...';
+      btn.disabled = true;
+
+      const data = {
+        name: form.name.value,
+        email: form.email.value,
+        interest: form.interest.value
+      };
+
+      try {
+        const res = await fetch('https://tyuk-subscribe.remenyfarm.workers.dev', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        if (res.ok) {
+          form.style.display = 'none';
+          success.classList.add('show');
+        } else {
+          throw new Error('Server error');
+        }
+      } catch (err) {
+        btn.textContent = 'Hiba történt — próbáld újra';
+        btn.disabled = false;
+        setTimeout(() => {
+          btn.textContent = 'Feliratkozom a várólistára 🐔';
+        }, 3000);
+      }
+    });
+  </script>
+
+</body>
+</html>
