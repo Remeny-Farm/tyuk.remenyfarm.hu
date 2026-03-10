@@ -137,7 +137,6 @@
       justify-content: center;
       text-align: center;
       overflow: hidden;
-      background: linear-gradient(135deg, var(--green-dark) 0%, #00695c 50%, #2e7d32 100%);
       padding: 120px 24px 80px;
     }
 
@@ -145,7 +144,8 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background: url('images/hero.jpg') center/cover no-repeat;
+      filter: brightness(0.35) saturate(0.9);
       pointer-events: none;
     }
 
@@ -170,6 +170,7 @@
       line-height: 1.2;
       color: #fff;
       margin-bottom: 16px;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.5), 0 1px 4px rgba(0,0,0,0.4);
       opacity: 0;
       transform: translateY(25px);
       animation: fadeUp 0.8s ease 0.4s forwards;
@@ -177,15 +178,16 @@
 
     .hero-title em {
       font-style: italic;
-      color: var(--cream);
+      color: #ffe8b0;
     }
 
     .hero-sub {
       font-size: clamp(15px, 2vw, 18px);
-      color: rgba(252, 243, 222, 0.85);
+      color: rgba(255, 255, 255, 0.92);
       line-height: 1.7;
       max-width: 540px;
       margin: 0 auto 32px;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.4);
       opacity: 0;
       transform: translateY(20px);
       animation: fadeUp 0.8s ease 0.6s forwards;
@@ -193,9 +195,9 @@
 
     .hero-price {
       display: inline-block;
-      background: rgba(255,255,255,0.12);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(0,0,0,0.35);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.25);
       border-radius: 16px;
       padding: 16px 32px;
       margin-bottom: 32px;
@@ -859,7 +861,8 @@
       Remény Farm Kft. · 3344 Mikófalva<br>
       <a href="https://www.remenyfarm.hu" target="_blank" rel="noopener">remenyfarm.hu</a> ·
       <a href="https://liget.remenyfarm.hu" target="_blank" rel="noopener">Liget projekt</a><br>
-      Tiszta élelmiszerek, tiszta lelkiismerettel. 🌿
+      Tiszta élelmiszerek, tiszta lelkiismerettel. 🌿<br>
+      Fotó: <a href="https://unsplash.com/@brigitte_e?utm_source=remenyfarm&utm_medium=referral" target="_blank" rel="noopener">Brigitte Elsner</a> / Unsplash
     </p>
   </footer>
 
